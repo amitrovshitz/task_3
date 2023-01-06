@@ -15,7 +15,7 @@ void insertion_sort(int* arr , int len)
          key=*(arr+i);
          j=i-1;
 
-        while((*(arr+j)>key)&&(j>=0))
+        while((j>=0)&&(*(arr+j)>key))
         {
           shift_element(arr+j,2);
           j--;
